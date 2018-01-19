@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DemoApp
+namespace CourseDomain
 {
     public class student
     {
@@ -27,12 +27,9 @@ namespace DemoApp
             }
         }
 
-        private int Age
+        private int GetAge()
         {
-            get
-            {
-                return 12;
-            }
+            return 12;
         }
     }
 }

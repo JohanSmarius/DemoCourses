@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DemoApp
+namespace CourseDomain
 {
     public class Class
     {
