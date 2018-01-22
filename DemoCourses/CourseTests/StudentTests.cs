@@ -19,6 +19,7 @@ namespace CourseTests
             // Assert
             Assert.AreEqual("John Smith", sut.FullName);
         }
+
         [TestMethod]
         public void FullName_Given_Empty_First_Name_Should_Throw_ArgumentException()
         {

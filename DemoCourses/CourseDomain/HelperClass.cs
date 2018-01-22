@@ -4,9 +4,9 @@ namespace CourseDomain
 {
     public class TestClass
     {
-        public static string Format(DateTime origial)
+        public static string Format(DateTime original)
         {
-            return origial.ToLongDateString();
+            return original.ToLongDateString();
         }
     }
 }

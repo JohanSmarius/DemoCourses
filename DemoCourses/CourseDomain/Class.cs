@@ -33,7 +33,7 @@ namespace CourseDomain
 
     public class Course
     {
-        private List<student> students;
+        private List<student> students = new List<student>();
         private List<Class> _classes;
 
         public string Title { get; set; }
@@ -45,6 +45,8 @@ namespace CourseDomain
         public List<string> Goals { get; set; }
 
         public IEnumerable<student> Students => students;
+
+        public bool ShouldBeGivenInEnglish { get; set; }
 
         public void AddClass(DateTime startDate, int Duration, Instructor instructor)
         {
@@ -71,6 +73,19 @@ namespace CourseDomain
                 date = date.AddDays(7);
             }
             while (i < count);
+        }
+
+        public void AddStudents(IEnumerable<student> newStudents)
+        {
+            foreach (var student in newStudents)
+            {
+                var exchangeStudent = student as ExchangeStudent;
+                if (exchangeStudent != null)
+                {
+                    ShouldBeGivenInEnglish = exchangeStudent.NativeLanguage != "English";
+                }
+                students.Add(student);
+            }
         }
 
 

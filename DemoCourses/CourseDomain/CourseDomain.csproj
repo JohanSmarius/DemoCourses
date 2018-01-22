@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="ExchangeStudent.cs" />
     <Compile Include="HelperClass.cs" />
     <Compile Include="Instructor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
