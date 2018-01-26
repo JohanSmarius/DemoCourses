@@ -78,12 +78,12 @@ csharp_style_conditional_delegate_call = true:suggestion
 
 # Newline settings
 csharp_new_line_before_open_brace = all
-csharp_new_line_before_else = true:error
-csharp_new_line_before_catch = true:error
-csharp_new_line_before_finally = true:error
-csharp_new_line_before_members_in_object_initializers = true:error
-csharp_new_line_before_members_in_anonymous_types = true:error
-csharp_new_line_between_query_expression_clauses = true:error
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_between_query_expression_clauses = true
 
 # Block indent settings
 csharp_indent_block_contents = true:suggestion
