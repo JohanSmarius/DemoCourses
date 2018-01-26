@@ -12,16 +12,12 @@ namespace CourseDomain
 
         public Instructor Instructor { get; set; }
 
-        public DateTime EndTime
-        {
-            get
-            {
-                if (Duration > 0)
-                {
+        public DateTime EndTime {
+            get {
+                if (Duration > 0) {
                     return StartTime.AddHours(Duration);
                 }
-                else
-                {
+                else {
                     // Default 2 hours
                     return StartTime.AddHours(2);
                 }
